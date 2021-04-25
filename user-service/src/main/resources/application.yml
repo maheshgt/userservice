@@ -1,0 +1,18 @@
+server:
+  port: 8001
+spring:
+  application:
+    name: USER-SERVICE
+  datasource:
+    password: mahi
+    url: jdbc:postgresql://localhost:5432/sbpro
+    username: postgres
+  jpa:
+    hibernate:
+      ddl-auto: update
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.PostgreSQLDialect
+    show-sql: true
+  zipkin:
+    base-url: http://127.0.0.1:9411/
